@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Hello, world!</title>
+
+    <style>
+        .logo-img {
+            height: 65px;
+            width: 65px;
+        }
+
+        .meter {
+            height: 20px;
+            position: relative;
+            background: #f3efef;
+            border-radius: 25px;
+        }
+
+        .meter>span {
+            display: block;
+            height: 100%;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            background-color: #aaa5ff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .attached {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 400px;
+            flex-wrap: wrap;
+            /* justify-content: ; */
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+
+        .attached::-webkit-scrollbar {
+            width: 0px;
+            height: 0px;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            background: transparent;
+        }
+
+        .attached .card img {
+            height: 350px;
+        }
+
+        .height-400 {
+            height: 400px;
+        }
+
+        @media only screen and (max-width: 760px) {
+            .attached {
+                height: 500px;
+            }
+
+            .attached .card img {
+                height: 250px;
+            }
+
+            .margin-left {
+                margin-left: 2rem;
+            }
+
+            .height-400 {
+                height: 180px;
+            }
+        }
+
+        .fa {
+            padding: 5px;
+            font-size: 30px;
+            width: 40px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 10%;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid text-center">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4 ">
+        <div class="card text-center my-5 bg-dark border-5">
+            <div class="card-body">
+                <h1 class="card-title text-light">Hi all, I'm Harsh</h1>
+                <p class="card-text my-3 text-light lead">A passionate Full Stack Software Developer having an
+                    experience
+                    of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some
+                    other cool libraries and frameworks</p>
+                <div>
+                    <a href="https://www.facebook.com/harsh.raghuvanshi.96/" class="fa fa-facebook" target="_blank"></a>
+                    <a href="mailto:harshraghuvanshi452@gmail.com" class="fa fa-google"></a>
+                    <a href="https://www.linkedin.com/in/harsh-raghuvanhi-27b9a8158/" class="fa fa-linkedin"></a>
+                    <!-- <a href="#" class="fa fa-youtube"></a> -->
+                    <a href="https://www.instagram.com/_harsh_raghuvanshi/" class="fa fa-instagram"></a>
+                </div>
+                <a href="#contact"><button type="button" class="btn btn-outline-light my-3 mx-1">CONTACT ME</button></a>
+                <a href="https://drive.google.com/file/d/1ga30oSohFmmQZDMv9cEgilDnzQpVbIi_/view?usp=sharing"
+                    target="_blank"><button type="button" class="btn btn-outline-light my-3 mx-1">SEE MY
+                        RESUME</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="card my-5 bg-dark border-5">
+            <div class="card-body m-4">
+                <h1 class="card-title text-light">What I do</h1>
+                <p class="card-text my-3 text-light fw-light">CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH
+                    STACK</p>
+                <div class="container my-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/HTML5_logo_black.svg/1024px-HTML5_logo_black.svg.png"
+                        class="rounded-circle logo-img" alt="...">
+                    <img src="https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png"
+                        class="rounded-circle logo-img" alt="...">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png"
+                        class="rounded-circle logo-img" alt="...">
+                    <img src="https://cdn.iconscout.com/icon/free/png-512/node-js-1174925.png"
+                        class="rounded-circle logo-img" alt="Nodejs">
+                    <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/mongodb-512.png"
+                        class="rounded-circle logo-img" alt="...">
+                    <img src="https://img.icons8.com/nolan/64/android-os.png" class="rounded-circle logo-img" alt="...">
+                    <img src="https://cdn1.iconfinder.com/data/icons/system-black-circles/512/java-512.png"
+                        class="rounded-circle logo-img" alt="...">
+                    <img src="https://cdn.iconscout.com/icon/free/png-512/c-programming-569564.png"
+                        class="rounded-circle logo-img" alt="...">
+                </div>
+                <p class="fw-light text-light mt-3"> Develop highly interactive Front end / User Interfaces for your web
+                    and mobile applications</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="card my-5 bg-dark border-5">
+            <div class="card-body m-3 text-light">
+                <h1 class="card-title text-light">Proficiency</h1>
+                <div class="container my-4">
+                    <p>Frontend/Design</p>
+                    <div class="meter">
+                        <span style="width: 90%;"></span>
+                    </div>
+                </div>
+                <div class="container my-4">
+                    <p>Backend</p>
+                    <div class="meter">
+                        <span style="width: 70%;">
+                        </span>
+                    </div>
+                </div>
+                <div class="container my-4">
+                    <p>Programming</p>
+                    <div class="meter">
+                        <span style="width: 75%;">
+                        </span>
+                    </div>
+                </div>
+                <div class="container my-4">
+                    <p>Data Structure And Algorithms</p>
+                    <div class="meter">
+                        <span style="width: 85%;">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="card my-5 bg-dark border-5">
+            <div class="card-body m-3 text-light">
+                <h1 class="card-title">Education</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="card my-5 bg-dark border-5" style="width: 100%">
+                                <img src="http://www.dsvv.ac.in/wp-content/uploads/dsvv/2016/07/DSVV-Logo.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">Dev Sanskriti Vishwavidyalaya</h4>
+                                    <p class="card-text">Bachelor of Computer Applications</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-dark">CGPA: 7.8 (till 4th Sem)</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="http://www.dsvv.ac.in/" class="card-link" target="_blank">Dev Sanskriti
+                                        Vishwavidyalaya</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card my-5 bg-dark border-5" style="width: 100%">
+                                <img src="https://img.etimg.com/thumb/msid-45428205,width-300,imgsize-133790,,resizemode-4,quality-100/.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">kendriya vidyalaya</h4>
+                                    <p class="card-text">Higher secondary School</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-dark">Percentage: 68%</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="https://kvsangathan.nic.in/" class="card-link">kendriya vidyalaya
+                                        sangathan</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card my-5 bg-dark border-5" style="width: 100%">
+                                <img src="https://img.etimg.com/thumb/msid-45428205,width-300,imgsize-133790,,resizemode-4,quality-100/.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">kendriya vidyalaya</h4>
+                                    <p class="card-text">Secondary School</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-dark">CGPA: 8.2</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="https://kvsangathan.nic.in/" class="card-link" target="_blank">kendriya
+                                        vidyalaya
+                                        sangathan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card my-5 bg-dark border-5">
+            <h1 class="text-light mx-5 mt-3">Project</h1>
+            <div class="card my-5">
+                <div id="carouselExampleInterval" class="carousel slide card-img-top" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="1000">
+                            <img src="./img/Screenshot (176).png" class="d-block w-100 height-400" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./img/Screenshot (184).png" class="d-block w-100 height-400" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Screenshot (177).png" class="d-block w-100 height-400" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Screenshot (178).png" class="d-block w-100 height-400" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Screenshot (182).png" class="d-block w-100 height-400" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Screenshot (174).png" class="d-block w-100 height-400" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Screenshot (170).png" class="d-block w-100 height-400" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Screenshot (179).png" class="d-block w-100 height-400" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Screenshot (180).png" class="d-block w-100 height-400" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Screenshot (181).png" class="d-block w-100 height-400" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+                <div class="card-body bg-dark text-center text-light">
+                    <h5 class="card-title">MMDB (Meta Movie Database)</h5>
+                    <p class="card-text">A Movie Recommendation System using HTML, CSS,
+                        JavaScript, NodeJS, ExpressJS, MongoDB.</p>
+                    <p class="card-text">• HTML, CSS, JavaScript used as font-end technology.</p>
+                    <p class="card-text">• NodeJS used for routing. MongoDB used as database, npm
+                        packages like Express, Cheerio and Mongoose are used.</p>
+                    <p class="card-text">• User based Collaborative filtering.</p>
+                    <a href="https://harshraghuvanshi452-mmdb-6201.zeet.app" class="card-link" target="_blank">MMDB
+                        (Meta Movie Database)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card my-5 bg-dark border-5">
+            <h1 class="text-light mx-5 mt-3">Website Templetes</h1>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide my-5" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./img/gym templete.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block text-light">
+                            <h5>Gym Website Templete</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./img/foodcorner templete.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block text-light">
+                            <h5>FoodCorner Website Templete</h5>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="card my-5 bg-dark border-5">
+            <div class="card-body m-4 text-light">
+                <h1 class="card-title">Android Mini-Projects</h1>
+                <div class="attached mt-3">
+                    <div class="card mb-3 bg-dark text-light mx-1 border-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./img/hickers watch.jpg" alt="..." class="margin-left">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title">Hickers Watch</h3>
+                                    <p class="card-text">It's an Android application for getting the altitude, logitude,
+                                        latitude and address of current location with the help of Geolocation API.</p>
+                                    <a href="https://drive.google.com/file/d/14Ml_iCj5_TR_NdMLQE39n1R1W3F_vIMh/view?usp=sharing"
+                                        target="_blank"><button type="button"
+                                            class="btn btn-outline-light my-3 mx-1">Get App</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 bg-dark text-light mx-1 border-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./img/weather app.jpg" alt="..." class="margin-left">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Get Weather</h5>
+                                    <p class="card-text">It's an Android Application for getting the weather forcast of
+                                        any city.</p>
+                                    <a href="https://drive.google.com/file/d/1OF5HJwQIfva7tKHDP202ff3krQs-T5bt/view?usp=sharing"
+                                        target="_blank"><button type="button"
+                                            class="btn btn-outline-light my-3 mx-1">Get App</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 bg-dark text-light mx-1 border-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./img/tic tak toe.jpg" alt="..." class="margin-left">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tic Tac Toe</h5>
+                                    <p class="card-text">Play the classic Tic-Tac-Toe game (also called Noughts and
+                                        Crosses) for two players.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 bg-dark text-light mx-1 border-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./img/web brower.jpg" alt="..." class="margin-left">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Web Brower</h5>
+                                    <p class="card-text">It's an Android Web Brower for using right now to search for,
+                                        reach, and explore websites.</p>
+                                    <a href="https://drive.google.com/file/d/1ZC1ebxuAQ_hF6Qt5IZjuHAOQriKQp9md/view?usp=sharing"
+                                        target="_blank"><button type="button"
+                                            class="btn btn-outline-light my-3 mx-1">Get App</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="card my-5 bg-dark border-5 text-center text-light">
+            <h1 class="card-title">Achievements And Certifications </h1>
+            <div class="attached mt-5 justify-content-around" style="height: 500px;">
+                <div class="card bg-dark text-light mx-1" style="width: 25rem;">
+                    <img src="./img/java basic.png" class="card-img-top" style="height: 350px;" alt="...">
+                    <div class="card-body">
+                        <h5>Java Basic Certificate</h5>
+                        <a href="https://www.hackerrank.com/certificates/606c157a1706" target="_blank"><button
+                                type="button" class="btn btn-outline-light my-3 mx-1">View Certificate</button></a>
+                    </div>
+                </div>
+                <div class="card bg-dark text-light mx-1" style="width: 25rem">
+                    <img src="./img/problem solving.png" class="card-img-top" style="height: 350px;" alt="...">
+                    <div class="card-body">
+                        <h5>Problem Solving Certificate</h5>
+                        <a href="https://www.hackerrank.com/certificates/2863d7c12c08" target="_blank"><button
+                                type="button" class="btn btn-outline-light my-3 mx-1">View Certificate</button></a>
+                    </div>
+                </div>
+                <div class="card bg-dark text-light mx-1" style="width: 25rem;">
+                    <img src="./img/android development.jpg" class="card-img-top" style="height: 350px;" alt="...">
+                    <div class="card-body">
+                        <h5>Android Development</h5>
+                        <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-a8c908f8-4e3e-4f5a-b21b-1164991e024d.jpg?v=1605205711000"
+                            target="_blank"><button type="button" class="btn btn-outline-light my-3 mx-1">View
+                                Certificate</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer id="contact" class="container text-center text-light">
+        <h1>Contact Me</h1>
+        <p class="lead fs-6">DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.</p>
+        <p class="lead fs-4">+91-6393043150</p>
+        <div>
+            <a href="https://www.facebook.com/harsh.raghuvanshi.96/" class="fa fa-facebook" target="_blank"></a>
+            <a href="mailto:harshraghuvanshi452@gmail.com" class="fa fa-google"></a>
+            <a href="https://www.linkedin.com/in/harsh-raghuvanhi-27b9a8158/" class="fa fa-linkedin"></a>
+            <!-- <a href="#" class="fa fa-youtube"></a> -->
+            <a href="https://www.instagram.com/_harsh_raghuvanshi/" class="fa fa-instagram"></a>
+        </div>
+        <div class="m-5">&copy; Copyright 2021, harsh Raghuvanshi</div>
+    </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
